@@ -30,6 +30,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import MathType from '@wiris/mathtype-ckeditor5';
 
 export default class MentorpickEditor extends BalloonEditorBase {}
 
@@ -58,7 +59,8 @@ MentorpickEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	CodeBlock
+	CodeBlock,
+	MathType
 ];
 
 MentorpickEditor.defaultConfig = {
@@ -71,6 +73,9 @@ MentorpickEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'|',
+			'Mathtype',
+			'ChemType',
 			'|',
 			'indent',
 			'outdent',
